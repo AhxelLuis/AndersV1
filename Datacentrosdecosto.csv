@@ -1,0 +1,61 @@
+Nivel 1;Codigo 1;Nivel 2;Codigo 2;Nivel 3;Codigo 3;Nivel 4;Codigo 4
+Peru;N1000001;Socios;N2010000;Socios;N3010100;Socios;N4010101
+Argentina;N1000002;Directorio;N2020000;Directorio;N3020100;Directorio;N4020101
+Bolivia;N1000003;Gerencia General;N2030000;Gerencia General;N3030100;Gerencia General;N4030101
+Brasil;N1000004;B1;N2040000;B1;;B1;
+Chile;N1000005;B2;N2050000;Conversion y Empaque;N3040100;Banda Ancha;N4040101
+Colombia;N1000006;B3;N2060000;Galvanoplastia;N3040200;Banda Angosta;N4040102
+Costa Rica;N1000007;C1;N2070000;Papel y Tratamiento de Aguas;N3040300;Corrugado;N4040103
+Ecuador;N1000008;Administracion y Finanzas;N2080000;Plasticos;N3040400;Acabado Generales de Metales;N4040201
+El Salvador;N1000009;Marketing e Intel. Mercado;N2090000;Caucho, Poliuretano y Comp.;N3040500;Metales Preciosos;N4040202
+Guatemala;N1000010;Logistica;N2100000;Petroleo y Gas;N3040600;Papel;N4040301
+Mexico;N1000011;Inmobiliaria;N2110000;Procesos de Fabricacion;N3040700;Tratamiento de Aguas;N4040302
+Paraguay;N1000012;;;B2;;Plasticos;N4040401
+Uruguay;N1000013;;;Pinturas, Tintas y Adhesivos;N3050100;Caucho;N4040501
+Venezuela;N1000014;;;Construccion y Asfalto;N3050200;Poliuretano;N4040502
+;;;;Textiles y Cueros;N3050300;Compuestos;N4040503
+;;;;Agroquimicos;N3050400;Petroleo;N4040601
+;;;;Laboratorios;N3050500;Gas;N4040602
+;;;;B3;;Biodiesel;N4040603
+;;;;Cuidado Personal y del Hogar;N3060100;Procesos de Fabricacion;N4040701
+;;;;Farmaceuticos y Veterinario;N3060200;B2;
+;;;;Alimentos y Nutricion Humana;N3060300;Pinturas;N4050101
+;;;;Nutricion Animal;N3060400;Tintas;N4050102
+;;;;C1;;Adhesivos;N4050103
+;;;;Productos para Bebes;N3070100;Construccion;N4050201
+;;;;Productos de Limpieza;N3070200;Asfalto;N4050202
+;;;;Administracion y Finanzas;;Explosivos;N4050203
+;;;;Administracion;N3080100;Textiles;N4050301
+;;;;Sistema Integral de Gestion;N3080200;Cueros;N4050302
+;;;;Contabilidad;N3080300;Agroquimicos;N4050401
+;;;;Creditos y Cobranzas;N3080400;Laboratorios;N4050501
+;;;;Control y Gestion;N3080500;B3;
+;;;;Legal;N3080600;Cuidado Personal;N4060101
+;;;;Recursos Humanos;N3080700;Cuidado del Hogar e Higiene;N4060102
+;;;;Tesoreria;N3080800;Farmaceuticos;N4060201
+;;;;Tecnologia de la Informacion;N3080900;Veterinario;N4060202
+;;;;Marketing e Intel. Mercado;N3090100;Alimentos;N4060301
+;;;;Logistica;;Nutricion Humana;N4060302
+;;;;Operaciones;N3100100;Nutricion Animal;N4060401
+;;;;Asuntos Regulatorios;N3100200;C1;
+;;;;Compras;N3100300;Productos para Bebes;N4070101
+;;;;Comercio Exterior;N3100400;Productos de Limpieza;N4070201
+;;;;Inmobiliaria;N3110100;Administracion;N4080101
+;;;;;;Sistema Integral de Gestion;N4080201
+;;;;;;Contabilidad;N4080301
+;;;;;;Creditos y Cobranzas;N4080401
+;;;;;;Control y Gestion;N4080501
+;;;;;;Legal;N4080601
+;;;;;;Recursos Humanos;N4080701
+;;;;;;Tesoreria;N4080801
+;;;;;;Tecnologia de la Informacion;N4080901
+;;;;;;Marketing e Intel. Mercado;N4090101
+;;;;;;Logistica;
+;;;;;;Almacen;N4100101
+;;;;;;Distribucion;N4100102
+;;;;;;Facturacion;N4100103
+;;;;;;Produccion;N4100104
+;;;;;;Asuntos Regulatorios;N4100201
+;;;;;;Compras;N4100301
+;;;;;;Comercio Exterior;N4100401
+;;;;;;Inmobiliaria;N4110101
