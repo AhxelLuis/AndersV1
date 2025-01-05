@@ -7,7 +7,7 @@ st.set_page_config(
 )
 
 data = pd.read_excel("Datacentrosdecosto.xlsx")
-datavendedor = pd.read_excel("Datavenderor.xlsx")
+datavendedor = pd.read_excel("Datavendedor.xlsx")
 
 
 def main():
@@ -15,6 +15,7 @@ def main():
     st.title("Asignación de niveles")
 
     st.dataframe(data)
+    st.dataframe(datavendedor)
 
     # eleccion bc
 
@@ -229,8 +230,8 @@ def main():
         "Colombia": ["Vendedor 1 Colombia", "Vendedor 2 Colombia"],
     }.get(opcionbc, ["Sin vendedores disponibles"])
 
-    opcionvendedor = st.selectbox('Ingresa BS:', vendedor_por_pais)
-    codigo_vendedor = data.loc[data['Vendedor'] == opcionbs, 'slpcode']
+    opcionvendedor = st.selectbox('Ingresa Vendedor:', vendedor_por_pais)
+    codigo_vendedor = data.loc[datavendedor['Vendedor'] == opcionvendedor, 'slpcode'].iloc[0]
 
 
 
@@ -260,7 +261,7 @@ def main():
             CogsOcrCo2 = '{codigo_bt}', 
             CogsOcrCo3 = '{codigo_bu}',
             CogsOcrCo4 = '{codigo_bs}',
-            --slpcode = '{codigo_vendedor}'
+            slpcode = '{codigo_vendedor}'
         WHERE docentry = {docentry}
         """
 
