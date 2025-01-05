@@ -7,6 +7,7 @@ st.set_page_config(
 )
 
 data = pd.read_excel("Datacentrosdecosto.xlsx")
+datavendedor = pd.read_excel("Datavenderor.xlsx")
 
 
 def main():
@@ -221,6 +222,18 @@ def main():
     codigo_bs = data.loc[data['Nivel 4'] == opcionbs, 'Codigo 4']
     codigo_bs = codigo_bs.iloc[0] if not codigo_bs.empty else "Sin código disponible"
 
+    #eleccion vendedor
+    vendedor_por_pais = {
+        "Peru": ["Vendedor 1 Peru", "Vendedor 2 Peru"],
+        "Chile": ["Vendedor 1 Chile", "Vendedor 2 Chile"],
+        "Colombia": ["Vendedor 1 Colombia", "Vendedor 2 Colombia"],
+    }.get(opcionbc, ["Sin vendedores disponibles"])
+
+    opcionvendedor = st.selectbox('Ingresa BS:', vendedor_por_pais)
+    codigo_vendedor = data.loc[data['Vendedor'] == opcionbs, 'slpcode']
+
+
+
 
     docentry = st.text_input("Ingresa un número para docentry:")
     
@@ -247,7 +260,7 @@ def main():
             CogsOcrCo2 = '{codigo_bt}', 
             CogsOcrCo3 = '{codigo_bu}',
             CogsOcrCo4 = '{codigo_bs}',
-            --slpcode = '46'
+            --slpcode = '{codigo_vendedor}'
         WHERE docentry = {docentry}
         """
 
@@ -261,5 +274,6 @@ def main():
     st.write(f"BT: {opcionbt} - Código BT: {codigo_bt}")
     st.write(f"BU: {opcionbu} - Código BU: {codigo_bu}")
     st.write(f"BS: {opcionbs} - Código BS: {codigo_bs}")
+    st.write(f"BS: {opcionvendedor} - Código Vendedor: {codigo_vendedor}")
 
 main()
