@@ -231,7 +231,7 @@ def main():
     }.get(opcionbc, ["Sin vendedores disponibles"])
 
     opcionvendedor = st.selectbox('Ingresa Vendedor:', vendedor_por_pais)
-    codigo_vendedor = data.loc[datavendedor['Vendedor'] == opcionvendedor, 'slpcode'].iloc[0]
+    codigo_vendedor = datavendedor.loc[datavendedor['Vendedor'] == opcionvendedor, 'slpcode'].iloc[0]
 
 
 
