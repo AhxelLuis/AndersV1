@@ -223,12 +223,79 @@ def main():
     codigo_bs = data.loc[data['Nivel 4'] == opcionbs, 'Codigo 4']
     codigo_bs = codigo_bs.iloc[0] if not codigo_bs.empty else "Sin código disponible"
 
-    #eleccion vendedor
+    # eleccion vendedor
     vendedor_por_pais = {
-        "Peru": ["Vendedor 1 Peru", "Vendedor 2 Peru"],
-        "Chile": ["Vendedor 1 Chile", "Vendedor 2 Chile"],
-        "Colombia": ["Vendedor 1 Colombia", "Vendedor 2 Colombia"],
-    }.get(opcionbc, ["Sin vendedores disponibles"])
+    "Argentina": [
+        "Alexis Ortiz", "Andrea Damianich", "Daniel Lagomarsino", 
+        "-Ningún empleado del departamento de ventas-", "Pablo Romeo",
+        "Ramiro Buscetto", "Sebastian Rivera", "Sin Comercial",
+        "Vicente Tarsia"
+    ],
+    "Bolivia": [
+        "Alejandro Gonzalez", "Carlos Soto", "Carola Ardaya", 
+        "Claudia Roda", "Gerencia", "Jean Pierre Justiniano", 
+        "Josue Torrez", "Karlita Jordan", "Katherina Yamamoto",
+        "Kathia Justiniano", "Lucy Palza", "Mariela Aguilera",
+        "Milenka Flores", "-Ningún empleado del departamento de ventas-",
+        "Oscar Ferrel", "Oscar Valderrama", "Pamela Rivero",
+        "Patricia Sandi", "Sin Comercial", "Veronica Pereira", 
+        "Victor Cachi", "Yamilca Gorostiaga"
+    ],
+    "Chile": [
+        "Alexis Carreño", "Carlos Cardenas", "Carolina Muñoz",
+        "Cristian Davila", "Diego Maldonado", "Enrique López",
+        "Gerencia", "Gerencia General", "Giannina Plaza", 
+        "Jessica Bastias", "Juan Francisco", "Julia Urriola",
+        "Lorena Garcia", "Mario Passalacqua", "Milenka Flores",
+        "Natalia Cid", "-Ningún empleado del departamento de ventas-",
+        "Pablo Romeo", "Paulina Jofre", "Peter Anders Hornung",
+        "Rosa Noriega", "Ruben Zamora", "Sarahiz Guerrero",
+        "Sin Comercial", "Soledad Sanchez", "Valeska Pottstock", 
+        "Yanara Fuentes"
+    ],
+    "Colombia": [
+        "Diana Rodriguez", "Diego Tierradentro", "Eliana Roberto",
+        "Elsa Gonzales", "Gustavo Medina", "Hernan Gomez",
+        "Jose Gomez", "Kelly Cordoba", "Narda Hurtado",
+        "Neymer Reyes", "-Ningún empleado del departamento de ventas-", 
+        "Peter Anders Hornung", "Sandra Rojas", "Sin Comercial",
+        "Ximena Diaz"
+    ],
+    "Ecuador": [
+        "Adriana Cazar", "Alejandra Alcivar", "Alexander Piedra Cano",
+        "Belen Bustamante", "Carol Barahona", "Esteban Flores G.",
+        "Frank Saravia", "Gerencia", "Gianina Anders", 
+        "Gonzalo Benavides", "Jaime Betancourt",
+        "Maria Mercedes Gonzalez", "-Ningún empleado del departamento de ventas-",
+        "Pablo Perez", "Paola Acosta", "Sin Comercial", "Suheil Palma"
+    ],
+    "Peru": [
+        "Alejandro Avendaño", "Alexander Becerra", "Alexander Piedra Cano",
+        "Aracely Mori", "Beatriz Sanchez", "Carla Garcia", 
+        "Carlos Caballero", "Carlos Quiroz", "Cesar Avila",
+        "Christopher Tasayco", "Cristina Pelaez", "Daniel Estremadoyro", 
+        "Diego Guzman", "Diego Zegarra", "Eliana Roberto", 
+        "Elsa Gonzales", "Emigio Gamboa", "Enzo Carpio", 
+        "Erick Montes", "Esteban Flores G.", "Evelyn Laura", 
+        "Fernando Sobrado", "Florian Ramirez", "Francesco Gallese",
+        "Frank Saravia", "Gabriel Burga", "Gabriela Anavitarte", 
+        "Gianina Anders", "Gisella Brenis", "Henry Llapapasca", 
+        "Horst Eichhorn", "Jaasiel Melillo", "Jessica Bastias",
+        "Jose Anticona", "Katherina Yamamoto", "Katya Portocarrero", 
+        "Kelly Cordoba", "Lesly Diaz", "Lourdes Franco", 
+        "Lucy Palza", "Luis Montesinos", "Margaret Alvarez",
+        "Marie Cabarrus", "Mario Flores", "Milenka Flores", 
+        "Mirella Nuñez", "-Ningún empleado del departamento de ventas-", 
+        "Oscar Ferrel", "Pablo Romeo", "Paola Acosta", 
+        "Paolo Revilla", "Paulina Jofre", "Pedro Levano", 
+        "Peter M. Anders Hornung", "Ricardo Palma", "Richard Anders", 
+        "Rodrigo Ma", "Ronald Arredondo", "Sandra Rojas", 
+        "Sergio Vargas", "Sin Comercial", "Soledad Sanchez", 
+        "Valeria Grimaldi", "Victor Cachi", "Walter Briceno",
+        "Yamilca Gorostiaga", "Yelicza Ganoza", "Yoilitza Carazas"
+    ]
+}.get(opcionbc, ["Sin vendedores disponibles"])
+
 
     opcionvendedor = st.selectbox('Ingresa Vendedor:', vendedor_por_pais)
     codigo_vendedor = datavendedor.loc[datavendedor['Vendedor'] == opcionvendedor, 'slpcode'].iloc[0]
