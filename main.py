@@ -9,7 +9,6 @@ st.set_page_config(
 data = pd.read_excel("Datacentrosdecosto.xlsx")
 datavendedor = pd.read_excel("Datavendedor.xlsx")
 
-
 def main():
 
     st.title("Asignación de niveles")
@@ -276,9 +275,6 @@ def main():
     opcionvendedor = st.selectbox('Ingresa Vendedor:', vendedor_por_pais)
     codigo_vendedor = datavendedor.loc[datavendedor['Vendedor'] == opcionvendedor, 'slpcode'].iloc[0]
 
-
-
-
     docentry = st.text_input("Ingresa un número para docentry:")
     
    
@@ -286,8 +282,8 @@ def main():
 
         update_sql = f"""
 
-        SELECT U_AND_DNIVEL1, U_AND_DNIVEL2, U_AND_DNIVEL3, U_AND_DNIVEL4, slpcode
-        FROM INV1
+        SELECT U_AND_DNIVEL1, U_AND_DNIVEL2, U_AND_DNIVEL3, U_AND_DNIVEL4, oslp.slpname, inv1.slpcode 
+        FROM INV1 join OSLP on OSLP.slpcode = INV1.slpcode
         WHERE docentry = {docentry}
 
         UPDATE INV1
