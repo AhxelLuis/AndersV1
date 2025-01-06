@@ -232,67 +232,43 @@ def main():
         "Vicente Tarsia"
     ],
     "Bolivia": [
-        "Alejandro Gonzalez", "Carlos Soto", "Carola Ardaya", 
-        "Claudia Roda", "Gerencia", "Jean Pierre Justiniano", 
-        "Josue Torrez", "Karlita Jordan", "Katherina Yamamoto",
-        "Kathia Justiniano", "Lucy Palza", "Mariela Aguilera",
+        "Carola Ardaya","Gerencia", "Jean Pierre Justiniano", 
+        "Josue Torrez", "Karlita Jordan","Mariela Aguilera",
         "Milenka Flores", "-Ningún empleado del departamento de ventas-",
         "Oscar Ferrel", "Oscar Valderrama", "Pamela Rivero",
-        "Patricia Sandi", "Sin Comercial", "Veronica Pereira", 
-        "Victor Cachi", "Yamilca Gorostiaga"
+        "Patricia Sandi", "Sin Comercial", "Victor Cachi", "Yamilca Gorostiaga"
     ],
     "Chile": [
-        "Alexis Carreño", "Carlos Cardenas", "Carolina Muñoz",
-        "Cristian Davila", "Diego Maldonado", "Enrique López",
-        "Gerencia", "Gerencia General", "Giannina Plaza", 
-        "Jessica Bastias", "Juan Francisco", "Julia Urriola",
-        "Lorena Garcia", "Mario Passalacqua", "Milenka Flores",
-        "Natalia Cid", "-Ningún empleado del departamento de ventas-",
-        "Pablo Romeo", "Paulina Jofre", "Peter Anders Hornung",
-        "Rosa Noriega", "Ruben Zamora", "Sarahiz Guerrero",
-        "Sin Comercial", "Soledad Sanchez", "Valeska Pottstock", 
+        "Alexis Carreño", "Carlos Cardenas","Diego Maldonado",
+        "Gerencia", "Gerencia General","Jessica Bastias",
+        "Lorena Garcia","Natalia Cid", "-Ningún empleado del departamento de ventas-",
+        "Paulina Jofre", "Ruben Zamora", "Sin Comercial", "Soledad Sanchez",
         "Yanara Fuentes"
     ],
     "Colombia": [
-        "Diana Rodriguez", "Diego Tierradentro", "Eliana Roberto",
-        "Elsa Gonzales", "Gustavo Medina", "Hernan Gomez",
-        "Jose Gomez", "Kelly Cordoba", "Narda Hurtado",
+        "Eliana Roberto", "Gustavo Medina", 
+        "Jose Gomez", "Kelly Cordoba", 
         "Neymer Reyes", "-Ningún empleado del departamento de ventas-", 
-        "Peter Anders Hornung", "Sandra Rojas", "Sin Comercial",
-        "Ximena Diaz"
+        "Peter Anders Hornung", "Sandra Rojas", "Sin Comercial"
     ],
     "Ecuador": [
-        "Adriana Cazar", "Alejandra Alcivar", "Alexander Piedra Cano",
-        "Belen Bustamante", "Carol Barahona", "Esteban Flores G.",
-        "Frank Saravia", "Gerencia", "Gianina Anders", 
-        "Gonzalo Benavides", "Jaime Betancourt",
-        "Maria Mercedes Gonzalez", "-Ningún empleado del departamento de ventas-",
+        "Alexander Piedra Cano", "Carol Barahona", "Esteban Flores G.",
+        "Gerencia", "Gonzalo Benavides", "Jaime Betancourt",
+        "-Ningún empleado del departamento de ventas-",
         "Pablo Perez", "Paola Acosta", "Sin Comercial", "Suheil Palma"
     ],
     "Peru": [
-        "Alejandro Avendaño", "Alexander Becerra", "Alexander Piedra Cano",
-        "Aracely Mori", "Beatriz Sanchez", "Carla Garcia", 
+        "Alexander Becerra", "Aracely Mori", "Beatriz Sanchez", 
         "Carlos Caballero", "Carlos Quiroz", "Cesar Avila",
-        "Christopher Tasayco", "Cristina Pelaez", "Daniel Estremadoyro", 
-        "Diego Guzman", "Diego Zegarra", "Eliana Roberto", 
-        "Elsa Gonzales", "Emigio Gamboa", "Enzo Carpio", 
-        "Erick Montes", "Esteban Flores G.", "Evelyn Laura", 
-        "Fernando Sobrado", "Florian Ramirez", "Francesco Gallese",
+        "Christopher Tasayco", "Elsa Gonzales", "Emigio Gamboa", "Enzo Carpio", 
+        "Erick Montes", "Fernando Sobrado", "Florian Ramirez",
         "Frank Saravia", "Gabriel Burga", "Gabriela Anavitarte", 
-        "Gianina Anders", "Gisella Brenis", "Henry Llapapasca", 
-        "Horst Eichhorn", "Jaasiel Melillo", "Jessica Bastias",
-        "Jose Anticona", "Katherina Yamamoto", "Katya Portocarrero", 
-        "Kelly Cordoba", "Lesly Diaz", "Lourdes Franco", 
-        "Lucy Palza", "Luis Montesinos", "Margaret Alvarez",
-        "Marie Cabarrus", "Mario Flores", "Milenka Flores", 
-        "Mirella Nuñez", "-Ningún empleado del departamento de ventas-", 
-        "Oscar Ferrel", "Pablo Romeo", "Paola Acosta", 
-        "Paolo Revilla", "Paulina Jofre", "Pedro Levano", 
-        "Peter M. Anders Hornung", "Ricardo Palma", "Richard Anders", 
-        "Rodrigo Ma", "Ronald Arredondo", "Sandra Rojas", 
-        "Sergio Vargas", "Sin Comercial", "Soledad Sanchez", 
-        "Valeria Grimaldi", "Victor Cachi", "Walter Briceno",
-        "Yamilca Gorostiaga", "Yelicza Ganoza", "Yoilitza Carazas"
+        "Gianina Anders", "Horst Eichhorn", "Jaasiel Melillo",
+        "Jose Anticona", "Lesly Diaz", "Mario Flores", "-Ningún empleado del departamento de ventas-",  
+        "Paolo Revilla", "Pedro Levano", 
+        "Peter M. Anders Hornung", "Ricardo Palma",
+        "Rodrigo Ma", "Ronald Arredondo", "Sin Comercial",
+        "Valeria Grimaldi", "Walter Briceno"
     ]
 }.get(opcionbc, ["Sin vendedores disponibles"])
 
